@@ -22,5 +22,14 @@ func main() {
 			zip:   110089,
 		},
 	}
-	fmt.Printf("%+v", aakash)
+	aakash.updateName("Akku")
+	aakash.print()
+}
+
+func (pointerToPerson *person) updateName(newFirstname string) {
+	(*pointerToPerson).firstName = newFirstname
+}
+
+func (p person) print() {
+	fmt.Printf("%+v", p)
 }
