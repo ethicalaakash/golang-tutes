@@ -12,5 +12,6 @@ func main() {
 	// 	"blue": "askjfh3",
 	// }
 	colors["white"] = "fffff"
+	delete(colors, "white")
 	fmt.Println(colors)
 }
