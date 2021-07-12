@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type bot interface {
-	getGreetings() string
+	getGreetings() string // here we need to give list of argument types and return type
 	// this says any type in the program with function called "getGreeting" if you eturn string
 	// then you are now an honorary member of type "bot"
 	//Now that you're a memeber of type "bot", you can now call this function
